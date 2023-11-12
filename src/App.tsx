@@ -223,7 +223,7 @@ class App extends Component<{}, AppState> {
           </div>
         )}
         {animation === "surprising" && (
-              <Confetti  confettiSource={{x: 140, y: 300, w: 10, h: 10}}/>
+              <Confetti  confettiSource={{x: 140, y: 230, w: 10, h: 10}}/>
         )}
       </div>
     );

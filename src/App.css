@@ -11,6 +11,7 @@ html {
 
 h1.intro {
   color: #fc0069;
+  margin-top: 2vw;
 }
 
 h1 {
@@ -18,7 +19,7 @@ h1 {
   text-align: center;
   color: white;
   text-transform: uppercase;
-  font-size: 15vw;
+  font-size: 9vw;
   text-shadow: 0.25vw 0.25vw rgba(0,0,0,0.25);
 }
 
@@ -27,7 +28,7 @@ p {
   text-align: center;
   color: white;
   text-transform: uppercase;
-  font-size: 6vw;
+  font-size: 5vw;
   text-shadow: 0.25vw 0.25vw rgba(0,0,0,0.25);
 }
 
@@ -35,7 +36,7 @@ button {
   display: inline-flexbox;
   padding: 3vw;
   margin: 3vw;
-  font-size: 15vw;
+  font-size: 6vw;
   font-weight: 700;
   font-family: Garamond, serif;
   text-transform: uppercase;
@@ -51,7 +52,7 @@ button {
   button {
     padding: 1vw;
     margin: 0.5vw;
-    font-size: 10vw;
+    font-size: 8vw;
   }
 }
 
