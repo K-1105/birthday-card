@@ -130,123 +130,6 @@ input[type=range]::-webkit-slider-thumb {
 /* Main character (body and eyes) */
 .character {
   position: relative;
-
-
-
-
-  /* .character__eye {
-    transition: transform 0.3s ease;
-    transform: translate(10px, 0px);
-    fill: rgb(0, 0, 0);
-  } */
-
-
-  /* .character.-still {
-    .-part-1 {
-      transform: translate(30px, -10px);
-    }
-
-    .-part-2 {
-      transform: translate(23px, 3px);
-    }
-
-    .-part-3 {
-      transform: translate(10px, 3px);
-    }
-
-    .-eye-l {
-      transform: translate(40px, -10px);
-    }
-
-    .-eye-r {
-      transform: translate(34px, -10px)
-    }
-  }
-
-  .character.-surprising {
-    .-part-1 {
-      transform: translate(12px, 0px);
-    }
-
-    .-part-2 {
-      transform: translate(10px, 1px);
-    }
-
-    .-part-3 {
-      transform: translate(5px, 2px);
-    }
-
-    .-eye-l {
-      transform: translate(52px, -8px);
-    }
-
-    .-eye-r {
-      visibility: hidden;
-      transform: translate(42px, -7px);
-    }
-  }
-
-  .character.-eating {
-    .-part-1 {
-      transform: translate(-9px, 5px);
-    }
-
-    .-part-2 {
-      transform: translate(-5px, 2.5px);
-    }
-
-    .-eye-l {
-      transform: translate(1px, 10px);
-    }
-
-    .-eye-r {
-      transform: translate(-1.5px, 10px)
-    }
-  }
-
-  .character.-happy {
-    .-part-1 {
-      transform: translate(-18px, 10px);
-    }
-
-    .-part-2 {
-      transform: translate(-10px, 5px);
-    }
-
-    .-part-3 {
-      transform: translate(-4px, 2px);
-    }
-
-    .-eye-l {
-      transform: translate(2px, 21px);
-    }
-
-    .-eye-r {
-      transform: translate(-3px, 20px)
-    }
-  }
-
-  .character.-crazy {
-    .-part-1 {
-      transform: translate(-17px, 20px);
-    }
-
-    .-part-2 {
-      transform: translate(-8px, 10px);
-    }
-
-    .-part-3 {
-      transform: translate(-2px, 4px);
-    }
-
-    .-eye-l {
-      transform: translate(2px, 41px);
-    }
-
-    .-eye-r {
-      transform: translate(-3px, 40px)
-    }
-  } */
 }
 
 
@@ -279,7 +162,7 @@ input[type=range]::-webkit-slider-thumb {
 
 .arm-eating-right {
   transform-origin: 220px 160px;
-  animation: scratch-chin 10s ease 0s infinite normal;
+  animation: scratch-chin 4s ease 0s infinite normal;
 }
 
 
@@ -289,24 +172,28 @@ input[type=range]::-webkit-slider-thumb {
     transform: rotate(-65deg);
   }
 
-  5% {
+  30% {
     transform: rotate(25deg) translateX(-10px);
   }
 
-  40% {
-    transform: rotate(-65deg);
+  45% {
+    transform: rotate(20deg) translateX(-10px);
   }
 
   50% {
+    transform: rotate(20deg) translateX(-10px);
+  }
+
+  55% {
+    transform: rotate(20deg) translateX(-10px);
+  }
+
+  70% {
     transform: rotate(25deg) translateX(-10px);
   }
 
-  60% {
-    transform: rotate(-65deg);
-  }
-
-  80% {
-    transform: rotate(25deg) translateX(-10px);
+  90% {
+    transform: rotate(-60deg);
   }
 
   100% {

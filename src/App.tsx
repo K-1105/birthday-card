@@ -6,22 +6,6 @@ import Particles from "./assets/particles.tsx";
 import Confetti from 'react-confetti'
 
 
-// // Character component
-// interface CharacterProps {
-//   animation: string;
-// }
-
-// const Character: React.FC<CharacterProps> = ({ animation }) => {
-//   const characterClass = `character -${animation}`;
-//   return (
-//     <svg className={characterClass} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 400">
-//           <Face />
-//           <Torso />
-//           <Cake />
-//     </svg>
-//   );
-// };
-
 // Left arm component
 interface ArmProps {
   animation: string;
@@ -33,16 +17,16 @@ const ArmLeft: React.FC<ArmProps> = ({ animation, armPath }) => (
     {animation === "happy" && <path className="arm-happy-left" d={armPath} />}
     {animation === "crazy" && <path className="arm-happy-left" d={armPath} />}
     {animation === "surprising" && (
-      <path d="M77,154c1,0,0,0,-50,-120" />
+      <path d="M80,154c1,0,0,0,-50,-120" />
     )}
     {animation === "eating" && (
-      <path d="M77,154s-10.18,82-36.43,103.72" />
+      <path d="M80,154s-10.18,82-36.43,103.72" />
     )}
     {animation === "still" && (
-      <path d="M77,154s-10.18,82-36.43,103.72" />
+      <path d="M80,154s-10.18,82-36.43,103.72" />
     )}
     {animation === "start" && (
-      <path d="M77,154s-10.18,82-36.43,103.72" />
+      <path d="M80,154s-10.18,82-36.43,103.72" />
     )}
   </svg>
 );
@@ -175,7 +159,7 @@ class App extends Component<{}, AppState> {
     const { frequency, amplitude, animation } = this.state;
     return (
       <div className="app">
-        <h1 className="intro">Dear Eve,</h1>
+        <h1 className="intro">Dear DrEve,</h1>
         <h1>Have a</h1>
         <div className="controls">
           <button onClick={() => this.setAnimation("surprising")}>surprising</button>
@@ -206,7 +190,7 @@ class App extends Component<{}, AppState> {
               value={frequency}
               onChange={this.setConfig}
               min="0"
-              max="10"
+              max="2"
             />
             <input id="input2"
               type="range"
@@ -215,7 +199,7 @@ class App extends Component<{}, AppState> {
               value={amplitude}
               onChange={this.setConfig}
               min="0.05"
-              max="2"
+              max="1.5"
             />
             <div>
               <p>craziness adjusters</p>
@@ -223,7 +207,7 @@ class App extends Component<{}, AppState> {
           </div>
         )}
         {animation === "surprising" && (
-              <Confetti  confettiSource={{x: 140, y: 230, w: 10, h: 10}}/>
+              <Confetti  confettiSource={{x: document.documentElement.scrollWidth*0.5, y: document.documentElement.scrollWidth*0.7, w: 10, h: 10}}/>
         )}
       </div>
     );
